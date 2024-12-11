@@ -47,7 +47,6 @@ public class MenuButton {
 		// TODO: set index to 0
 		// TODO if mouseOver
 		// TODO: set index to 1
-		// TODO: end of if statement
 		// TODO: if mousePressed
 		// TODO: set index to 2
 	}

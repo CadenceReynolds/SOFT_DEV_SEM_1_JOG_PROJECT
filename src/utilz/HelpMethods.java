@@ -10,16 +10,16 @@ public class HelpMethods {
 		// TODO: check if not IsSolid(x, y, lvlData)
 		// TODO: if so check if not isSolid(x + width, y + heigth, lvlData)
 		// TODO: if so check if not isSolid(x + width, y, lvlData)
-		// TODO: if so check if not isSolid(x, y + height, lvlData) and return true
-		// TODO: if not do nothing
-		// TODO: if not do nothing
-		// TODO: if not do nothing
-		// TODO: if not return false.
+		// TODO: if so check if not isSolid(x, y + height, lvlData)
+		// TODO: return true
+		// TODO: return false.
 	}
 
 	private static boolean IsSolid(float x, float y, int[][] lvlData) {
 		// TODO: if x is less than 0 or x is greater than or equal to Game.GAME_WIDTH -> return true
+
 		// TODO: if y is less than 0 or y is greater than or equal to Game.GAME_HEIGHT -> return true
+
 		// TODO: create a float called xIndex and set to x divided by Game.TILES_SIZE
 		// TODO: repeat for yIndex.
 
@@ -52,7 +52,6 @@ public class HelpMethods {
 		// TODO: if not isSolid(hitbox.x, hitbox.y + hitbox.height + 1, lvlData)
 		// TODO: if not isSolid(hitbox.x + hitbox.width, hitbox.y + hitbox.height + 1, lvlData)
 		// TODO: return false
-		// TODO: else nothing
 
 		return true;
 
