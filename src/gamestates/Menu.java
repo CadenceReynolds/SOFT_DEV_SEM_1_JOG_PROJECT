@@ -37,7 +37,6 @@ public class Menu extends State implements Statemethods {
 
 	@Override
 	public void update() {
-		// TODO: this is an enhanced for loop or a foreach loop
 		for (MenuButton mb : buttons)
 			mb.update();
 	}
@@ -57,7 +56,7 @@ public class Menu extends State implements Statemethods {
 	@Override
 	public void mousePressed(MouseEvent e) {
 		for(MenuButton mb : buttons){
-			if (isIn(e, mb){
+			if (isIn(e, mb)){
 				mb.setMousePressed(true);
 			}
 		}

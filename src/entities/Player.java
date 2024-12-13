@@ -155,7 +155,7 @@ public class Player extends Entity {
                 animations[row][col] = img.getSubimage(col * 64, row * 40, 64, 40);
 
     }
-
+    
     public void loadLvlData(int[][] lvlData) {
         this.lvlData = lvlData;
         if (!IsEntityOnFloor(hitbox, lvlData)){

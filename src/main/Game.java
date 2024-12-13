@@ -36,8 +36,8 @@ public class Game implements Runnable {
     }
 
     private void initClasses() {
-        // TODO: set menu to new Menu passing in this
-        // TODO: set playing to new Playing passing in this
+        menu = new Menu(this);
+        playing = new Playing(this);
     }
 
     private void startGameLoop() {
