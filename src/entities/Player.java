@@ -124,8 +124,9 @@ public class Player extends Entity {
             }
         } else {
             updateXPos(xSpeed);
-            moving = true;
+
         }
+        moving = true;
     }
 
     private void jump() {
@@ -140,9 +141,9 @@ public class Player extends Entity {
     }
 
     private void updateXPos(float xSpeed) {
-        if (CanMoveHere(hitbox.x + xSpeed, hitbox.y, hitbox.width, hitbox.height, lvlData)){
+        if (CanMoveHere(hitbox.x + xSpeed, hitbox.y, hitbox.width, hitbox.height, lvlData)) {
             hitbox.x += xSpeed;
-        } else{
+        } else {
             hitbox.x = GetEntityXPosNextToWall(hitbox, xSpeed);
         }
     }
@@ -155,10 +156,10 @@ public class Player extends Entity {
                 animations[row][col] = img.getSubimage(col * 64, row * 40, 64, 40);
 
     }
-    
+
     public void loadLvlData(int[][] lvlData) {
         this.lvlData = lvlData;
-        if (!IsEntityOnFloor(hitbox, lvlData)){
+        if (!IsEntityOnFloor(hitbox, lvlData)) {
             inAir = true;
         }
     }
